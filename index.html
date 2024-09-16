@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nutrition Tracker</h1>
+        
+        <h2>Set Daily Goals</h2>
+        <input type="number" id="calorieGoal" placeholder="Calorie Goal">
+        <input type="number" id="proteinGoal" placeholder="Protein Goal (g)">
+        <button onclick="setGoals()">Set Goals</button>
+
+        <h2>Add Consumption</h2>
+        <input type="number" id="caloriesConsumed" placeholder="Calories Consumed">
+        <input type="number" id="proteinConsumed" placeholder="Protein Consumed (g)">
+        <input type="time" id="mealTime" placeholder="Meal Time (HH:mm)">
+        <button onclick="addConsumption()">Add Consumption</button>
+
+        <h2>Remaining</h2>
+        <p id="remaining"></p>
+
+        <h2>Consumption Log</h2>
+        <ul id="consumptionLog"></ul>
+
+        <button onclick="resetConsumptions()">Reset Consumptions</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
